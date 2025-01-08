@@ -15,9 +15,9 @@ class Product(Base):
 
 
 class User(Base):
-    __tablename__ = "users_table"
+    __tablename__ = "user_table"
 
-    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, primary_key=True)
     email = Column(String(100), unique=True, nullable=False)
     password_hash = Column(String(255), nullable=False)
 
